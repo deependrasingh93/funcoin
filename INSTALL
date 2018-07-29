@@ -1,9 +1,9 @@
-Building Funcoin
+Building Youcoin
 
-See doc/readme-qt.rst for instructions on building Funcoin-Qt,
+See doc/readme-qt.rst for instructions on building Youcoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Funcoin.
+implementation of Youcoin.
 
-See doc/build-*.txt for instructions on building funcoind,
+See doc/build-*.txt for instructions on building youcoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of Funcoin.
+implementation of Youcoin.

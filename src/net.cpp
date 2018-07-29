@@ -1093,7 +1093,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "Funcoin " + FormatFullVersion();
+        string strDesc = "Youcoin " + FormatFullVersion();
 
         try {
             loop {
@@ -1173,10 +1173,12 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
+
     {NULL, NULL}
 };
 
 static const char *strTestNetDNSSeed[][2] = {
+
     {NULL, NULL}
 };
 
@@ -1225,7 +1227,7 @@ void ThreadDNSAddressSeed()
 
 unsigned int pnSeed[] =
 {
-    0xb14a46ae
+	0x0
 };
 
 void DumpAddresses()
@@ -1658,7 +1660,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Funcoin is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. Youcoin is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());
